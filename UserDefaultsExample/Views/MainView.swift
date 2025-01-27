@@ -21,7 +21,7 @@ struct MainView: View {
             VStack(alignment: .center, spacing: 32) {
                 HStack {
                     Button {
-
+                        viewModel.deleteNickname()
                     } label: {
                         Text("Eliminar")
                             .foregroundStyle(viewModel.canDelete ? .red : .gray)
